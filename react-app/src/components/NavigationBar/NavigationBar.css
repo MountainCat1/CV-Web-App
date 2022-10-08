@@ -1,0 +1,50 @@
+:root {
+    --navbar-height: 3rem;
+}
+
+
+.navigation-bar {
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+
+    width: 100vw;
+    height: var(--navbar-height);
+
+    background-color: var(--color-2);
+
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.51);
+
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-flex {
+    width: var(--page-width);
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-button {
+    background-color: var(--color-2);
+
+    padding: 0px 20px;
+    position: relative;
+
+    text-align: center;
+
+    border: none;
+
+    border-bottom: black solid;
+
+    box-shadow: inset 0px 0px rgba(0, 0, 0, 1);
+}
+
+
+.navbar-button:hover{
+
+}
+
+
