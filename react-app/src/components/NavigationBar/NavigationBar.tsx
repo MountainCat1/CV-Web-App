@@ -14,12 +14,12 @@ export default function (){
             <button className='navbar-button' onClick={() => {
                 console.log('click')
             }}>
-                Main page
+                Tickets
             </button>
             <button className='navbar-button' onClick={() => {
                 console.log('click')
             }}>
-                Main page
+                Contact
             </button>
 
         </div>

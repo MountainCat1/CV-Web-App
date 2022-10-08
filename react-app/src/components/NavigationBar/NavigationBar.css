@@ -28,18 +28,17 @@
 }
 
 .navbar-button {
+
     background-color: var(--color-2);
+    color: var(--font-color);
 
     padding: 0px 20px;
     position: relative;
 
     text-align: center;
+    font-size: var(--font-size-1);
 
     border: none;
-
-    border-bottom: black solid;
-
-    box-shadow: inset 0px 0px rgba(0, 0, 0, 1);
 }
 
 
