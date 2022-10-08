@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 
-import 'styles/globalVaraibles.css'
+import 'styles/globals.css'
 import Main from "components/Main/MainComponent";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Router>
             <div className="page">
                 <Routes>
-                    <Route path="/main" element={<Main/>}/>
+                    <Route path="/" element={<Main/>}/>
                 </Routes>
             </div>
         </Router>

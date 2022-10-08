@@ -1,17 +1,16 @@
 :root {
   --navbar-height: 3rem;
 
-  --page-width: 55rem;
+  --page-width: 59rem;
 }
 
 .App {
   min-height: 100vh;
 
-  color: var(--font-color);
+  color: var(--font-color-1);
 }
 
 body {
-
   /* Cool gradient */
   background:
     linear-gradient(45deg,
@@ -25,10 +24,12 @@ body {
   background-color: var(--color-1);
 
   margin: 0px auto;
-  padding: var(--navbar-height);
+  padding-top: calc( var(--navbar-height) + 1rem ) ;
 
   max-width: var(--page-width);
   min-height: 100vh;
 
   text-align: center;
+
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.71);
 }
