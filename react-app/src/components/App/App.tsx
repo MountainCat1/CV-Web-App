@@ -10,6 +10,8 @@ import Main     from "components/Main/MainComponent";
 import Contact  from "components/Contact/Contact";
 import Tickets  from "components/Tickets/Tickets";
 
+import 'styleHelpers/fadeInImage'
+
 function App() {
     return (
         <div className="App">
