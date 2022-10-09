@@ -1,0 +1,51 @@
+.gradient-border {
+    position: relative;
+
+    padding: 0.2rem;
+
+    overflow: hidden;
+
+    border-radius: 3px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gradient-border::before {
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90rem;
+    height: 90rem;
+    background: var(--gradient-1);
+    background-repeat: no-repeat;
+
+
+    animation: rotate-in-center 1s linear infinite;
+}
+
+
+.gradient-border-content {
+    position: relative;
+
+    padding: 2rem;
+    height: 100%;
+
+    background-color: var(--color-4);
+    color: var(--font-color);
+
+    z-index: 5;
+}
+
+@keyframes rotate-in-center {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
+

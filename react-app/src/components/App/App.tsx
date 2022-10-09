@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 
 import 'styles/globals.css'
+import 'styles/page.css'
 
 import Main     from "components/Main/MainComponent";
 import Contact  from "components/Contact/Contact";

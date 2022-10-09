@@ -36,10 +36,10 @@
 
 .navbar-button {
     background-color: var(--color-2);
-    color: var(--font-color-2);
 
     position: relative;
 
+    color: var(--font-color-2);
     text-align: center;
     font-size: var(--font-size-1);
 
