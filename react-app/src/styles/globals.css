@@ -4,7 +4,7 @@
     --color-2: #2c2c2c;
     --color-3: #3a3838;
 
-    --font-color-1: #ffffff;
+    --font-color: #ffffff;
     --font-color-2: #afafaf;
 
     --font-size-1: 22px;
@@ -14,7 +14,7 @@
     --gradient-color-3: rgba(252, 176, 69, 1);
 
     --gradient-1: linear-gradient(45deg,
-    var(--gradient-color-1) 0%,
-    var(--gradient-color-2) 50%,
-    var(--gradient-color-3) 100%);
+        var(--gradient-color-1) 0%,
+        var(--gradient-color-2) 50%,
+        var(--gradient-color-3) 100%);
 }
