@@ -1,6 +1,8 @@
 export default function (){
     return (<>
-        Main
-        <p>I love bread</p>
+        <h1>Ticketto</h1>
+        <p>
+            Welcome to our amazing website!
+        </p>
     </>)
 }
