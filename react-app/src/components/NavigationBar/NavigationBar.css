@@ -38,7 +38,6 @@
     background-color: var(--color-2);
     color: var(--font-color-2);
 
-    padding: 10px 20px;
     position: relative;
 
     text-align: center;
@@ -60,7 +59,9 @@
     background: var(--gradient-1);
 
     transform: scaleX(0);
-    transition: transform 0.15s ease-in-out;
+    transition:
+            transform 0.15s ease-in-out,
+            text-shadow 0.02s ease-out;
 }
 
 .navbar-button:hover:after{

@@ -4,22 +4,26 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 
 import 'styles/globals.css'
-import Main from "components/Main/MainComponent";
+
+import Main     from "components/Main/MainComponent";
+import Contact  from "components/Contact/Contact";
+import Tickets  from "components/Tickets/Tickets";
 
 function App() {
-  return (
-    <div className="App">
-        <NavigationBar/>
-
-        <Router>
-            <div className="page">
-                <Routes>
-                    <Route path="/" element={<Main/>}/>
-                </Routes>
-            </div>
-        </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <NavigationBar/>
+                <div className="page">
+                    <Routes>
+                        <Route path="/"         element={<Main/>}/>
+                        <Route path="/contact"  element={<Contact/>}/>
+                        <Route path="/tickets"  element={<Tickets/>}/>
+                    </Routes>
+                </div>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
