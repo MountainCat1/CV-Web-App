@@ -1,4 +1,5 @@
 import './MainComponent.css'
+import Reveal from "../Reveal/Reveal";
 
 export default function (){
     return (<div>
@@ -15,10 +16,13 @@ export default function (){
             <div className='gradient-border-content'>
                 <p>The best part is we. We are the best!</p>
 
+                <Reveal effect='revealed'>
+                    <img src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
+                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                    <img src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
+                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                </Reveal>
 
-                <img className='reveal'
-                    src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
-                    alt={'young-attractive-man-working-in-a-call-center'}/>
             </div>
         </div>
 

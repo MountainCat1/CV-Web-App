@@ -7,9 +7,6 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import 'styles/globals.css'
 import 'styles/page.css'
 
-
-
-import 'styleHelpers/fadeInImage'
 import Page from "../Page/Page";
 
 function App() {
