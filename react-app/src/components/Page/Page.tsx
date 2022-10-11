@@ -23,7 +23,7 @@ export default function () {
                             exit: 0
                         }}
                         classNames='page'
-                        key={location.pathname}>
+                        key={location.key}>
 
                         <Routes>
                             <Route path="/" element={<Main/>}/>
