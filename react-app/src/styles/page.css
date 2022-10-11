@@ -17,14 +17,14 @@
 .page-content {
     padding-top: calc( var(--navbar-height) ) ;
 
-    padding-right:  2rem;
-    padding-left:  2rem;
+    padding-right:  2em;
+    padding-left:  2em;
 }
 
 /* === Page transition === */
 .page-enter {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(3em);
 }
 .page-enter-active {
     opacity: 1;
@@ -64,8 +64,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    width: 90rem;
-    height: 90rem;
+    width: 90em;
+    height: 90em;
     background: var(--gradient-1);
     background-repeat: no-repeat;
 
@@ -77,7 +77,7 @@
 .gradient-border-content {
     position: relative;
 
-    padding: 2rem;
+    padding: 2em;
     height: 100%;
 
     background-color: var(--color-4);
