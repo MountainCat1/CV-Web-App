@@ -15,7 +15,7 @@
 }
 
 .page-content {
-    padding-top: calc( var(--navbar-height) + 0.2rem ) ;
+    padding-top: calc( var(--navbar-height) ) ;
 
     padding-right:  2rem;
     padding-left:  2rem;
@@ -24,14 +24,14 @@
 /* === Page transition === */
 .page-enter {
     opacity: 0.1;
-    transform: translateY(10rem) translateX(10rem);
+    transform: translateY(3rem);
 
 }
 
 .page-enter-active {
     opacity: 1;
     transform: translateY(0) translateX(0);
-    transition: 500ms ease-in-out;
+    transition: 500ms ease;
 }
 .page-exit {
     opacity: 0;
