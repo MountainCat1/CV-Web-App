@@ -1,7 +1,7 @@
 import './MainComponent.css'
 
 export default function (){
-    return (<>
+    return (<div>
         <h1>Ticketto</h1>
         <p>
             Welcome to our amazing website!
@@ -17,7 +17,8 @@ export default function (){
 
 
                 <img className='reveal'
-                    src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'/>
+                    src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
+                    alt={'young-attractive-man-working-in-a-call-center'}/>
             </div>
         </div>
 
@@ -31,5 +32,5 @@ export default function (){
         </p>
 
         Foot
-    </>)
+    </div>)
 }
