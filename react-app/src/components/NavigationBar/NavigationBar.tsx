@@ -1,23 +1,33 @@
 import './NavigationBar.css'
-import {useNavigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
-export default function (){
-    const navigate = useNavigate();
-
+export default function () {
+    const getNavbarLinkClasses = (active : boolean) : string => {
+        return active
+            ? 'navbar-button navbar-button-active'
+            : 'navbar-button'
+    }
 
     return (<div className={'navigation-bar'}>
         <div className={'navbar-flex'}>
 
-            <a className='navbar-button' onClick={() => navigate('/')}>
+            <NavLink
+                end
+                className={({ isActive }) => getNavbarLinkClasses(isActive)}
+                to={'/'}>
                 Main page
-            </a>
-            <a className='navbar-button' onClick={() => navigate('/tickets')}>
+            </NavLink>
+            <NavLink
+                className={({ isActive }) => getNavbarLinkClasses(isActive)}
+                to={('/tickets')}>
                 Tickets
-            </a>
-            <a className='navbar-button' onClick={() => navigate('/contact')}>
+            </NavLink>
+            <NavLink
+                className={({ isActive }) => getNavbarLinkClasses(isActive)}
+                to={('/contact')}>
                 Contact
-            </a>
+            </NavLink>
 
         </div>
     </div>)
