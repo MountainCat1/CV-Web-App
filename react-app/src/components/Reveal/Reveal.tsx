@@ -1,39 +1,42 @@
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef} from "react";
 
 interface IRevealProps {
     children: any[],
-    effect: string
+    effect: string,
+    offset: number
 }
 
-export default (props: IRevealProps) => {
-    const myRef = useRef();
+const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300}) => {
+    const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if(myRef.current == undefined)
+        if(ref.current === undefined)
             return;
 
-        const element = myRef.current as HTMLElement;
+        const element = ref.current as HTMLElement;
         const elementPosition = element?.offsetTop
 
-        if(scrollPosition >= elementPosition){
-            const children = props.children as HTMLElement[];
-
-            children.forEach(child => {
-                child.classList.add(props.effect)
-            })
+        if(scrollPosition + offset >= elementPosition){
+            addChildrenStyle(effect);
         }
-
-        console.log('xD')
     };
 
-    useEffect(() => {
-        /*const children = props.children as HTMLElement[];
+    const addChildrenStyle = (className : string) => {
+        if(ref.current == null)
+            return;
 
-        children.forEach(child => {
-           child.style.setProperty('display', 'none')
-        });
-*/
+        const children = ref.current.children;
+
+        for(let i = 0; i < children.length; i++){
+            const child = children[i];
+            child.classList.add(className)
+        }
+    }
+
+    useEffect(() => {
+        addChildrenStyle('reveal')
+
         window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
@@ -42,7 +45,8 @@ export default (props: IRevealProps) => {
     }, []);
 
 
-    return (<>
-        {props.children}
-    </>)
+    return (<span ref={ref}>
+        {children}
+    </span>)
 }
+export default Reveal;

@@ -1,6 +1,7 @@
 import './MainComponent.css'
 import Reveal from "../Reveal/Reveal";
 
+
 export default function (){
     return (<div>
         <h1>Ticketto</h1>
@@ -14,11 +15,10 @@ export default function (){
 
         <div className='gradient-border'>
             <div className='gradient-border-content'>
-                <p>The best part is we. We are the best!</p>
 
-                <Reveal effect='revealed'>
-                    <img src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
-                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                <Reveal offset={150} effect='revealed'>
+                    <p>The best part is we. We are the best!</p>
+
                     <img src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
                 </Reveal>
