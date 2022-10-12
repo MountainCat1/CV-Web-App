@@ -3,7 +3,7 @@
 export default function (){
 
 
-    return(<div>
+    return(<div className={'page-content'}>
         <h1 className='gradient-text'>
             Contact
         </h1>

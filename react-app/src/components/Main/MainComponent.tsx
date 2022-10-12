@@ -3,7 +3,7 @@ import Reveal from "../Reveal/Reveal";
 
 
 export default function (){
-    return (<div>
+    return (<div className={'page-content'}>
         <h1>Ticketto</h1>
         <p>
             Welcome to our amazing website!
