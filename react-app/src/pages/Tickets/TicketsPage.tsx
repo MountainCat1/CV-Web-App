@@ -11,7 +11,7 @@ export default function (){
             Tickets
         </h1>
 
-        <h3>Here will be some tickets!</h3>
+        <p>Here will be some tickets!</p>
 
         <div className='gradient-border'>
             <div className="card-container gradient-border-content">

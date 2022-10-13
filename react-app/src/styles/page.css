@@ -101,6 +101,10 @@
     color: var(--font-color);
 
     z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes rotate-in-center {
@@ -122,6 +126,8 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* ====== Default elements ====== */
+/* */
 h1 {
     font-size: 62px;
 
@@ -130,5 +136,9 @@ h1 {
     background: var(--gradient-3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+p {
+    text-align: center;
 }
 

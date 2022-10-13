@@ -8,6 +8,6 @@ export default function (){
             Contact
         </h1>
 
-        This is contact!
+        <p>This is contact!</p>
     </div>)
 }
