@@ -1,20 +1,100 @@
+/*
+    This whole file DOES require refactoring
+
+    also in .card i didnt use border-radius coz it completely doesnt work with
+    overflow: hidden for some f@cking reason
+*/
+
+
+:root {
+    --dark-from-bottom-gradient:
+            linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,0) 100%);
+}
+
 
 .card-container {
     display: flex;
     justify-content: space-around;
 
-    background-color: var(--color-2);
-
     padding: 1em;
 }
 
 .card {
-    background-color: var(--color-4);
+    overflow: hidden;
 
-    width: 7em;
-    height: 9em;
+    background-image:
+            url("/public/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg");
+    background-position: center;
+    background-size: cover;
+
+    padding: 4em 0 0;
+
+    width: 12em;
+
+    box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
+
+    transition: transform 0.2s;
 }
 
-.card-image {
+.card:hover {
+    transform: scale(1.05);
+}
 
+.card-content {
+    background: var(--dark-from-bottom-gradient);
+
+    width: 100%;
+
+    padding-top: 4em;
+
+    transform: translateY(30%);
+
+    transition: transform 0.2s;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+.card-title {
+    position: relative;
+
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.card-title::after{
+    content: '';
+
+    position: absolute;
+
+    background: var(--gradient-1);
+
+    left: 0;
+    bottom: -0.1em;
+
+    height: 0.13em;
+    width: calc(100% - 1em);
+    margin-left: 0.6em;
+
+    border-radius: 0.1em;
+
+    transform-origin: left;
+    transform: scaleX(0);
+
+    transition: transform 0.2s;
+}
+
+.card:hover .card-title::after {
+    transform: scaleX(1);
+}
+
+
+.card-body {
+    padding: 1rem 1rem;
+    margin: 0;
+
+    font-size: 16px;
+
+    text-align: left;
 }
