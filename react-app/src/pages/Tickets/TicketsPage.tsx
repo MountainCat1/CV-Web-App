@@ -23,7 +23,7 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
-                        <NavLink className='card-button' to='/'>
+                        <NavLink className='card-link' to='/'>
                             Learn more
                         </NavLink>
                     </div>
@@ -36,7 +36,7 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
-                        <NavLink className='card-button' to='/'>
+                        <NavLink className='card-link' to='/'>
                             Learn more
                         </NavLink>
                     </div>
@@ -49,7 +49,7 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
-                        <NavLink className='card-button' to='/'>
+                        <NavLink className='card-link' to='/'>
                             Learn more
                         </NavLink>
                     </div>
