@@ -1,4 +1,5 @@
 import './TicketsPage.css'
+import {NavLink} from "react-router-dom";
 
 
 
@@ -10,7 +11,7 @@ export default function (){
             Tickets
         </h1>
 
-        <p>Here will be some tickets!</p>
+        <h3>Here will be some tickets!</h3>
 
         <div className='gradient-border'>
             <div className="card-container gradient-border-content">
@@ -22,6 +23,9 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
+                        <NavLink className='card-button' to='/ticket/XD'>
+                            Learn more
+                        </NavLink>
                     </div>
                 </div>
                 <div className='card'>
@@ -32,6 +36,9 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
+                        <NavLink className='card-button' to='/ticket/XD'>
+                            Learn more
+                        </NavLink>
                     </div>
                 </div>
                 <div className='card'>
@@ -42,6 +49,9 @@ export default function (){
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
                         </p>
+                        <NavLink className='card-button' to='/ticket/XD'>
+                            Learn more
+                        </NavLink>
                     </div>
                 </div>
             </div>
