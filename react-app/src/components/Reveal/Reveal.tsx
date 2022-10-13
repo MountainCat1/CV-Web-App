@@ -1,3 +1,5 @@
+import './Reveal.css'
+
 import React, {useEffect, useRef} from "react";
 
 interface IRevealProps {
