@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
-import Main from "components/Main/MainComponent";
-import Contact from "components/Contact/Contact";
-import Tickets from "components/Tickets/Tickets";
+import Main from "pages/Main/MainPage";
+import Contact from "pages/Contact/ContactPage";
+import Tickets from "pages/Tickets/TicketsPage";
 
 import React from "react";
 

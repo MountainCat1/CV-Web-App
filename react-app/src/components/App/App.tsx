@@ -7,7 +7,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import 'styles/globals.css'
 import 'styles/page.css'
 
-import Page from "../Page/Page";
+import Page from "../Page/PageContentRouter";
 
 function App() {
     return (

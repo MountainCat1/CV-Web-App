@@ -1,5 +1,5 @@
-import './MainComponent.css'
-import Reveal from "../Reveal/Reveal";
+import './MainPage.css'
+import Reveal from "../../components/Reveal/Reveal";
 
 
 export default function (){
@@ -19,7 +19,8 @@ export default function (){
                 <Reveal offset={150} effect='revealed'>
                     <p>The best part is we. We are the best!</p>
 
-                    <img src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
+                    <img className='page-img'
+                         src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
                 </Reveal>
 

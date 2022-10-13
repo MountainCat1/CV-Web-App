@@ -1,0 +1,20 @@
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var(--color-2);
+
+    padding: 1em;
+}
+
+.card {
+    background-color: var(--color-4);
+
+    width: 7em;
+    height: 9em;
+}
+
+.card-image {
+
+}
