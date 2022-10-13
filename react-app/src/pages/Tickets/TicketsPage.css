@@ -14,9 +14,13 @@
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-    padding: 2.5em;
+    row-gap: 2em;
+    column-gap: 1em;
+
+    padding: 1.5em;
 }
 
 .card {
@@ -35,7 +39,8 @@
     transition: transform 0.2s;
 }
 
-.card:hover {
+.card:hover,
+.card:focus-within {
     transform: scale(1.05);
 }
 
@@ -45,14 +50,23 @@
     width: 100%;
 
     padding-top: 4em;
-
-    transform: translateY(45%);
-
-    transition: transform 0.3s;
 }
 
-.card:hover .card-content {
+@media (hover) {
+    .card-content {
+        transform: translateY(45%);
+
+        transition: transform 0.3s;
+    }
+}
+
+.card:hover .card-content,
+.card:focus-within .card-content{
     transform: translateY(0);
+}
+
+.card:focus-within .card-content {
+    transition-duration: 0s;
 }
 
 .card-title {
@@ -74,7 +88,7 @@
 
     height: 0.13em;
     width: calc(100% - 1em);
-    margin-left: 0.6em;
+    margin-left: 0.5em;
 
     border-radius: 0.1em;
 
