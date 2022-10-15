@@ -10,9 +10,9 @@ export default function () {
     return (
         <div className="page">
             <Routes>
-                <Route path="/" element={<Main/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path="/tickets" element={<Tickets/>}/>
+                <Route path="/"         element={<Main/>}/>
+                <Route path="/contact"  element={<Contact/>}/>
+                <Route path="/tickets"  element={<Tickets/>}/>
             </Routes>
         </div>
     )
