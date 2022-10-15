@@ -1,0 +1,23 @@
+.contact-info-container {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.contact-info {
+    background: var(--color-1);
+    box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
+
+    border-radius: 0.3em;
+
+    height: 5em;
+    width: 10em;
+
+    padding: 2em;
+}
