@@ -2,13 +2,13 @@ import './Reveal.css'
 
 import React, {useEffect, useRef} from "react";
 
-interface IRevealProps {
+interface RevealProps {
     children: any[],
     effect: string,
     offset: number
 }
 
-const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300}) => {
+const Reveal: React.FC<RevealProps> =({children, effect, offset = 300}) => {
     const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
