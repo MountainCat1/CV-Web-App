@@ -1,5 +1,4 @@
 .contact-info-container {
-
     display: flex;
 
     align-items: center;
@@ -19,5 +18,24 @@
     height: 5em;
     width: 10em;
 
-    padding: 2em;
+    padding: 2em 2em 2.5em 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.contact-image {
+    background: var(--gradient-1);
+
+    padding: 0.25em;
+
+    width: 4em;
+
+    -webkit-background-clip: content;
+    -webkit-text-fill-color: transparent;
+
+    border-radius: 0.25em;
+}
+
