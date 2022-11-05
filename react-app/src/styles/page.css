@@ -56,9 +56,6 @@
 }
 /*=== /// ===*/
 
-
-
-
 .gradient-border {
     position: relative;
 
@@ -86,8 +83,9 @@
     background: var(--gradient-1);
     background-repeat: no-repeat;
 
-
-    animation: rotate-in-center 1s linear infinite;
+    /* Uncomment this line to get animated border effect */
+    /* Now its disabled bcs literally nobody notices it  */
+/*    animation: rotate-in-center 1s linear infinite;*/
 }
 
 
