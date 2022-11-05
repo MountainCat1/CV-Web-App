@@ -4,8 +4,6 @@ import {NavLink} from "react-router-dom";
 
 
 export default function (){
-
-
     return(<div className={'page-content'}>
         <h1 className='gradient-text'>
             Tickets
@@ -56,7 +54,5 @@ export default function (){
                 </div>
             </div>
         </div>
-
-
     </div>)
 }

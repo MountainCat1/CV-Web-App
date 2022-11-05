@@ -1,14 +1,20 @@
 import './Reveal.css'
 
-import React, {useEffect, useRef} from "react";
+import React, {CSSProperties, useEffect, useRef} from "react";
 
 interface IRevealProps {
     children: any[],
     effect: string,
-    offset: number
+    offset: number,
+    style?: CSSProperties,
+    className?: string
 }
 
-const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300}) => {
+function delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+}
+
+const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = {}, className = undefined}) => {
     const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
@@ -36,10 +42,19 @@ const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300}) => {
         }
     }
 
-    useEffect(() => {
+    const waitAndReveal = async () => {
+        await delay(5);
+        addChildrenStyle(effect);
+    }
+
+     useEffect( () => {
         addChildrenStyle('reveal')
 
         window.addEventListener('scroll', handleScroll, { passive: true });
+
+        if(offset === 0){
+            waitAndReveal();
+        }
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -47,7 +62,7 @@ const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300}) => {
     }, []);
 
 
-    return (<span ref={ref}>
+    return (<span ref={ref} style={style} className={className} >
         {children}
     </span>)
 }
