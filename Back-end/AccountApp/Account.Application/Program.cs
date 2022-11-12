@@ -1,7 +1,6 @@
-using Account.Data.Contexts;
-using Account.Data.Generics;
 using Account.Domain.Abstractions;
 using Account.Domain.Entities;
+using Account.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

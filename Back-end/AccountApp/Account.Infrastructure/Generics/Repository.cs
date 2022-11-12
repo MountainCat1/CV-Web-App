@@ -2,7 +2,7 @@
 using Account.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
-namespace Account.Data.Generics;
+namespace Account.Infrastructure.Generics;
 
 public class Repository<TEntity, TDbContext> : IRepository<TEntity> 
     where TEntity : class, IEntity

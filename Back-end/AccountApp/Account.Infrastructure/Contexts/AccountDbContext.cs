@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Account.Data.Contexts;
+namespace Account.Infrastructure.Contexts;
 
 public class AccountDbContext : DbContext
 {
