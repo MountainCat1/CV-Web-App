@@ -11,5 +11,5 @@ public class AccountEntity : IEntity
     public string AccountName { get; set; }
     public string PasswordHash { get; set; }
     
-    public DateTime AccoutCreationTime { get; set; }
+    public DateTime AccountCreationTime { get; set; }
 }
