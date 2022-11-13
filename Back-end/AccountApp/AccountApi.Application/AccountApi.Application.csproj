@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Account.Infrastructure\Account.Infrastructure.csproj" />
+      <ProjectReference Include="..\AccountApi.Infrastructure\AccountApi.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

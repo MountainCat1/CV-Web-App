@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Account.Domain.Abstractions;
+using AccountApi.Domain.Abstractions;
 
-namespace Account.Domain.Entities;
+namespace AccountApi.Domain.Entities;
 
 public class AccountEntity : IEntity
 {

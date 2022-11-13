@@ -1,4 +1,4 @@
-﻿namespace Account.Domain.Abstractions;
+﻿namespace AccountApi.Domain.Abstractions;
 
 public interface IEntity 
 {

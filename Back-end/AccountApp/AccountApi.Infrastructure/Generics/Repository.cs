@@ -1,8 +1,8 @@
 ﻿using System.Linq.Expressions;
-using Account.Domain.Abstractions;
+using AccountApi.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
-namespace Account.Infrastructure.Generics;
+namespace AccountApi.Infrastructure.Generics;
 
 public class Repository<TEntity, TDbContext> : IRepository<TEntity> 
     where TEntity : class, IEntity

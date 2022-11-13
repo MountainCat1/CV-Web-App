@@ -1,4 +1,4 @@
-﻿namespace Account.Infrastructure.Generics;
+﻿namespace AccountApi.Infrastructure.Generics;
 
 public class ItemNotFoundException : Exception
 {
