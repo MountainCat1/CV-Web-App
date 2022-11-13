@@ -4,7 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Account.Domain</RootNamespace>
+        <RootNamespace>AccountApi.Domain</RootNamespace>
     </PropertyGroup>
 
 </Project>
