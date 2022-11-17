@@ -59,7 +59,8 @@
 .gradient-border {
     position: relative;
 
-    padding: 0.2rem;
+    padding: 0.2em;
+    margin: 0.5em;
 
     overflow: hidden;
 
@@ -138,5 +139,10 @@ h1 {
 
 p {
     text-align: center;
+}
+
+.page-content > p {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 

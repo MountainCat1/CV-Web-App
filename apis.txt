@@ -1,0 +1,24 @@
+# Required
+
+## Account
+// use OAuth
+* Create account
+* Login to account (return auth token)
+* Confirm email
+
+
+## Ticket
+
+* Buy ticket
+* Use ticket
+* Return ticket
+
+* Get info about one ticket
+* Get all tickets of a user
+
+## Events
+(Only for admins)
+* Create event
+* Get all events
+* Get one event by guid
+* Update event
