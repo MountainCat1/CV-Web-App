@@ -16,7 +16,9 @@ export default function (){
                 <div className='card'>
                     <div className='card-content'>
                         <h2 className='card-title'>
-                            Mega Tickets
+                            <div className={'card-title-content '}>
+                                Skills
+                            </div>
                         </h2>
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
@@ -29,7 +31,9 @@ export default function (){
                 <div className='card'>
                     <div className='card-content'>
                         <h2 className='card-title'>
-                            Mega Tickets
+                            <div className={'card-title-content '}>
+                                Experience and Education
+                            </div>
                         </h2>
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
@@ -42,7 +46,10 @@ export default function (){
                 <div className='card'>
                     <div className='card-content'>
                         <h2 className='card-title'>
-                            Mega Tickets
+                            <div className={'card-title-content '}>
+                                About me
+                            </div>
+
                         </h2>
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
