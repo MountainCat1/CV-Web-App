@@ -23,9 +23,9 @@ const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = 
             return;
 
         const element = ref.current as HTMLElement;
-        const elementPosition = element?.offsetTop
+        const elementPosition = element?.getBoundingClientRect().top;
 
-        if(scrollPosition + offset >= elementPosition){
+        if(offset >= elementPosition - scrollPosition){
             addChildrenStyle(effect);
         }
     };

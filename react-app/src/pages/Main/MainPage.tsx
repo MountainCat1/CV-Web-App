@@ -16,7 +16,7 @@ export default function () {
         <div className='gradient-border'>
             <div className='gradient-border-content'>
 
-                <Reveal className="text-with-image" effect={'revealed'} offset={250}>
+                <Reveal className="text-with-image" effect={'revealed'} offset={0}>
                         <img className='inline-image'
                              src='/img/photos/ME_PC.jpg'
                              alt={'young-attractive-man-working-in-a-call-center'}/>
@@ -28,7 +28,7 @@ export default function () {
             </div>
         </div>
 
-        <p>
+        <span>
             <p>
 
                 I am a passionate programmer who tries to develop towards Web Development, mainly Back-End, aswell as
@@ -50,12 +50,12 @@ export default function () {
                 As a member of the team, I am very cheerful, and I can introduce a looser and pleasant atmosphere for
                 everyone.
             </p>
-        </p>
+        </span>
 
         <div className='gradient-border'>
             <div className='gradient-border-content'>
 
-                <Reveal className="text-with-image" effect={'revealed'} offset={450}>
+                <Reveal className="text-with-image" effect={'revealed'} offset={180}>
                     <img className='inline-image'
                          src='/img/photos/DimWarper.png'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
