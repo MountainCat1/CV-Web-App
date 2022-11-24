@@ -14,10 +14,10 @@
 }
 
 .page-content {
-    padding-top: calc( var(--navbar-height) ) ;
+    padding-top: calc(var(--navbar-height));
 
-    padding-right:  2em;
-    padding-left:  2em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 /* === Page transition === */
@@ -38,22 +38,25 @@
 }
 
 
-
 .page-enter {
     opacity: 0;
     transform: translateY(3em);
 }
+
 .page-enter-active {
     opacity: 1;
     transform: translateY(0) translateX(0);
     transition: 500ms ease;
 }
+
 .page-exit {
     opacity: 0;
 }
+
 .page-exit-active {
     opacity: 0;
 }
+
 /*=== /// ===*/
 
 .gradient-border {
@@ -84,9 +87,12 @@
     background: var(--gradient-1);
     background-repeat: no-repeat;
 
+
     /* Uncomment this line to get animated border effect */
     /* Now its disabled bcs literally nobody notices it  */
-/*    animation: rotate-in-center 1s linear infinite;*/
+
+    /* i enabled it! :D */
+    animation: rotate-in-center 1s linear infinite;
 }
 
 
@@ -101,9 +107,9 @@
 
     z-index: 5;
 
-    display: flex;
+/*    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 @keyframes rotate-in-center {
@@ -113,8 +119,31 @@
 }
 
 .page-img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+
+    box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
+}
+
+.text-with-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    column-count: 2;
+
+    width: 100%;
+}
+
+.inline-image {
+    width: 15em;
+
+    display: inline;
+
+    z-index: 5;
+
+    transition: transform 0.1s;
 
     box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
 }

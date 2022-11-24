@@ -2,46 +2,67 @@ import './MainPage.css'
 import Reveal from "../../components/Reveal/Reveal";
 
 
-export default function (){
+export default function () {
     return (<div className={'page-content'}>
-        <h1>Ticketto</h1>
+        <h1>Tomasz Banaś</h1>
         <p>
-            Welcome to our amazing website!
+            Welcome to my amazing website!
         </p>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            This website about me!
         </p>
 
         <div className='gradient-border'>
             <div className='gradient-border-content'>
-                <Reveal offset={150} effect='revealed'>
-                    <p>The best part is we. We are the best!</p>
 
-                    <img className='page-img'
-                         src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
-                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                <Reveal className="text-with-image" effect={'revealed'} offset={250}>
+                        <img className='inline-image'
+                             src='/img/photos/ME_PC.jpg'
+                             alt={'young-attractive-man-working-in-a-call-center'}/>
+                        <p>The best part is we. We are the best!</p>
+{/*
+                    <Reveal offset={150} effect='revealed'>
+                    </Reveal>*/}
                 </Reveal>
             </div>
         </div>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+            <p>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am a passionate programmer who tries to develop towards Web Development, mainly Back-End, aswell as
+                Game Dev. I am happy to learn about new solutions and technology to improve myself in the field of IT.
+            </p>
+            <p>
+                I have great enthusiasm for learning. I try as much as I can to make my skills constantly expand.
+            </p>
+            <p>
+                I am studying and working in order to gain experience and practical skills. Like every student, I have
+                my
+                shortcomings, but i easly make up for it with my commitment and determination. I have no problem
+                listening
+                and learning from the more experienced team members. I understand that there is still a long way to go,
+                on
+                the programmer's path.
+            </p>
+            <p>
+                As a member of the team, I am very cheerful, and I can introduce a looser and pleasant atmosphere for
+                everyone.
+            </p>
         </p>
 
         <div className='gradient-border'>
             <div className='gradient-border-content'>
-                <Reveal offset={150} effect='revealed'>
-                    <p>The best part is we. We are the best!</p>
 
-                    <img className='page-img'
-                         src='/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg'
+                <Reveal className="text-with-image" effect={'revealed'} offset={450}>
+                    <img className='inline-image'
+                         src='/img/photos/DimWarper.png'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
+                    <p>My game Dimwarper avaliable on Steam!</p>
+                    {/*
+                    <Reveal offset={150} effect='revealed'>
+                    </Reveal>*/}
                 </Reveal>
             </div>
         </div>
