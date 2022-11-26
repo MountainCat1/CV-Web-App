@@ -14,6 +14,7 @@ export default function (){
         <div className='gradient-border'>
             <div className="card-container gradient-border-content">
                 <div className='card'>
+                    <img className={'card-image'} src='/img/photos/ME_PC.jpg' alt={'me'}/>
                     <div className='card-content'>
                         <h2 className='card-title'>
                             <div className={'card-title-content '}>
@@ -29,6 +30,7 @@ export default function (){
                     </div>
                 </div>
                 <div className='card'>
+                    <img className={'card-image'} src='/img/photos/ME-STUPID.jpg'  alt={'me'}/>
                     <div className='card-content'>
                         <h2 className='card-title'>
                             <div className={'card-title-content '}>
@@ -44,6 +46,7 @@ export default function (){
                     </div>
                 </div>
                 <div className='card'>
+                    <img className={'card-image'} src='/img/photos/ME_NICE.jpg'  alt={'me'}/>
                     <div className='card-content'>
                         <h2 className='card-title'>
                             <div className={'card-title-content '}>

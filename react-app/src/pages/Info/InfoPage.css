@@ -23,11 +23,17 @@
     padding: 1.5em;
 }
 
-.card {
-    overflow: hidden;
-
+.card-1 {
     background-image:
             url("/public/img/photos/48502301-view-of-a-young-attractive-man-working-in-a-call-center.jpg");
+}
+
+
+.card {
+    position: relative;
+
+    overflow: hidden;
+
     background-position: center;
     background-size: cover;
 
@@ -36,6 +42,13 @@
     box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
 
     transition: transform 0.2s;
+}
+
+.card-image {
+    height: 100%;
+    overflow: clip;
+
+    position: absolute;
 }
 
 .card:hover,
