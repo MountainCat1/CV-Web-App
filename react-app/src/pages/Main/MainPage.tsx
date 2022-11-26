@@ -20,7 +20,7 @@ export default function () {
                         <img className='inline-image'
                              src='/img/photos/ME_PC.jpg'
                              alt={'young-attractive-man-working-in-a-call-center'}/>
-                        <p>The best part is we. We are the best!</p>
+                        <p>Me at my PC doing some coooding</p>
 {/*
                     <Reveal offset={150} effect='revealed'>
                     </Reveal>*/}
@@ -55,11 +55,26 @@ export default function () {
         <div className='gradient-border'>
             <div className='gradient-border-content'>
 
-                <Reveal className="text-with-image" effect={'revealed'} offset={180}>
+                <Reveal className="text-with-image" effect={'revealed'} offset={160}>
                     <img className='inline-image'
                          src='/img/photos/DimWarper.png'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
                     <p>My game Dimwarper avaliable on Steam!</p>
+                    {/*
+                    <Reveal offset={150} effect='revealed'>
+                    </Reveal>*/}
+                </Reveal>
+            </div>
+        </div>
+
+        <div className='gradient-border'>
+            <div className='gradient-border-content'>
+
+                <Reveal className="text-with-image" effect={'revealed'} offset={160}>
+                    <img className='inline-image'
+                         src='/img/photos/ME-STUPID.jpg'
+                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                    <p>Me at my college studying applied computer science!</p>
                     {/*
                     <Reveal offset={150} effect='revealed'>
                     </Reveal>*/}
