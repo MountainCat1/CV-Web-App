@@ -1,4 +1,4 @@
-import './TicketsPage.css'
+import './InfoPage.css'
 import {NavLink} from "react-router-dom";
 
 

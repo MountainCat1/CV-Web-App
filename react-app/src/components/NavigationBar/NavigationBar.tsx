@@ -20,8 +20,8 @@ export default function () {
             </NavLink>
             <NavLink
                 className={({ isActive }) => getNavbarLinkClasses(isActive)}
-                to={('/tickets')}>
-                Tickets
+                to={('/info')}>
+                Info
             </NavLink>
             <NavLink
                 className={({ isActive }) => getNavbarLinkClasses(isActive)}
