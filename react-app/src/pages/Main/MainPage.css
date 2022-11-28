@@ -7,6 +7,8 @@ p {
 }
 
 .main-page-text {
+    margin: 3em 0;
+
     max-width: 100%;
     width: 100%;
 
@@ -18,6 +20,8 @@ p {
     margin: 1em;
     padding: 1em;
 
+    height: 9em;
+
     border-radius: 0.5em;
 
     background-color: var(--color-4);
@@ -27,9 +31,31 @@ p {
     overflow: hidden;
 }
 
+
+@media screen and (min-width: 1024px) {
+    .grid-item-left {
+        margin-top: 8em;
+    }
+    .grid-item-right {
+        margin-bottom: 8em;
+    }
+}
+
+.grid-item-left,
+.grid-item-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.grid-item-text {
+
+    margin: auto auto;
+}
+
+
 @media screen and (max-width: 1024px) {
     .main-page-text {
         grid-template-columns: 1fr;
     }
-
 }

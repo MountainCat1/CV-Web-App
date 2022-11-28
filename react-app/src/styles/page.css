@@ -16,8 +16,8 @@
 .page-content {
     padding-top: calc(var(--navbar-height));
 
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 /* === Page transition === */
