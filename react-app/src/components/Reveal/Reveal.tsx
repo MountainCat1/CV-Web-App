@@ -17,7 +17,7 @@ function delay(ms: number) {
 const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = {}, className = undefined}) => {
     const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
-        const scrollPosition = window.scrollY;
+        // const scrollPosition = window.scrollY;
 
         if(ref.current === undefined)
             return;
@@ -25,7 +25,9 @@ const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = 
         const element = ref.current as HTMLElement;
         const elementPosition = element?.getBoundingClientRect().top;
 
-        if(offset >= elementPosition - scrollPosition){
+        console.log(elementPosition)
+
+        if(offset >= elementPosition){
             addChildrenStyle(effect);
         }
     };
