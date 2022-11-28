@@ -22,7 +22,7 @@ export default function (){
                             </div>
                         </h2>
                         <p className='card-body'>
-                            It's super mega cooool ticket. You want it! :D
+                            List of all my skills -- what i can and can't do!
                         </p>
                         <NavLink className='card-link' to='/tickets/normal'>
                             Learn more
@@ -38,7 +38,7 @@ export default function (){
                             </div>
                         </h2>
                         <p className='card-body'>
-                            It's super mega cooool ticket. You want it! :D
+                            Information about my education and experience in the profession
                         </p>
                         <NavLink className='card-link' to='/tickets/normal'>
                             Learn more
@@ -54,7 +54,7 @@ export default function (){
                             </div>
                         </h2>
                         <p className='card-body'>
-                            It's super mega cooool ticket. You want it! :D
+                            General stuff about me as a person.
                         </p>
                         <NavLink className='card-link' to='/tickets/normal'>
                             Learn more
