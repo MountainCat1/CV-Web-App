@@ -17,17 +17,16 @@ function delay(ms: number) {
 const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = {}, className = undefined}) => {
     const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
-        // const scrollPosition = window.scrollY;
-
         if(ref.current === undefined)
             return;
 
         const element = ref.current as HTMLElement;
         const elementPosition = element?.getBoundingClientRect().top;
+        const displayHeight = window.screen.height
 
-        console.log(elementPosition)
+        console.log(displayHeight)
 
-        if(offset >= elementPosition){
+        if(offset >= elementPosition - displayHeight / 2){
             addChildrenStyle(effect);
         }
     };
