@@ -85,6 +85,5 @@ export default function () {
                 </Reveal>
             </div>
         </div>
-
     </div>)
 }
