@@ -1,1 +1,35 @@
 
+:root {
+}
+
+p {
+    line-height: 1.6;
+}
+
+.main-page-text {
+    max-width: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-page-text > * {
+    margin: 1em;
+    padding: 1em;
+
+    border-radius: 0.5em;
+
+    background-color: var(--color-4);
+
+    box-shadow: var(--default-shadow);
+
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-page-text {
+        grid-template-columns: 1fr;
+    }
+
+}

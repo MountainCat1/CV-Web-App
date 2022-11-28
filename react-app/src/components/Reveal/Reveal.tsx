@@ -3,7 +3,7 @@ import './Reveal.css'
 import React, {CSSProperties, useEffect, useRef} from "react";
 
 interface IRevealProps {
-    children: any[],
+    children: any[] | any,
     effect: string,
     offset: number,
     style?: CSSProperties,

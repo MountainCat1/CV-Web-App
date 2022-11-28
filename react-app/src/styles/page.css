@@ -123,6 +123,7 @@
     height: auto;
 
     box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.39);
+    object-fit: cover;
 }
 
 .text-with-image {

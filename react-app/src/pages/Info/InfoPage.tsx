@@ -6,10 +6,10 @@ import {NavLink} from "react-router-dom";
 export default function (){
     return(<div className={'page-content'}>
         <h1 className='gradient-text'>
-            Tickets
+            Info
         </h1>
 
-        <p>Here will be some tickets!</p>
+        <p>All information about me divided into sub-categories.</p>
 
         <div className='gradient-border'>
             <div className="card-container gradient-border-content">
@@ -64,5 +64,8 @@ export default function (){
                 </div>
             </div>
         </div>
+
+        <p>If there is anything missing do not hesitate to hit me up in any way!</p>
+
     </div>)
 }

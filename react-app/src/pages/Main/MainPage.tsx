@@ -17,39 +17,46 @@ export default function () {
             <div className='gradient-border-content'>
 
                 <Reveal className="text-with-image" effect={'revealed'} offset={0}>
-                        <img className='inline-image'
-                             src='/img/photos/ME_PC.jpg'
-                             alt={'young-attractive-man-working-in-a-call-center'}/>
-                        <p>Me at my PC doing some coooding</p>
-{/*
+                    <img className='inline-image'
+                         src='/img/photos/ME_PC.jpg'
+                         alt={'young-attractive-man-working-in-a-call-center'}/>
+                    <p>Me at my PC doing some coooding</p>
+                    {/*
                     <Reveal offset={150} effect='revealed'>
                     </Reveal>*/}
                 </Reveal>
             </div>
         </div>
 
-        <span>
-            <p>
-
-                I am a passionate programmer who tries to develop towards Web Development, mainly Back-End, aswell as
-                Game Dev. I am happy to learn about new solutions and technology to improve myself in the field of IT.
-            </p>
-            <p>
-                I have great enthusiasm for learning. I try as much as I can to make my skills constantly expand.
-            </p>
-            <p>
-                I am studying and working in order to gain experience and practical skills. Like every student, I have
-                my
-                shortcomings, but i easly make up for it with my commitment and determination. I have no problem
-                listening
-                and learning from the more experienced team members. I understand that there is still a long way to go,
-                on
-                the programmer's path.
-            </p>
-            <p>
-                As a member of the team, I am very cheerful, and I can introduce a looser and pleasant atmosphere for
-                everyone.
-            </p>
+        <span className={'main-page-text'}>
+            <Reveal effect={'revealed'} offset={250}>
+                <p>
+                    I am a passionate programmer who tries to develop towards Web Development, mainly Back-End, aswell as
+                    Game Dev. I am happy to learn about new solutions and technology to improve myself in the field of IT.
+                </p>
+            </Reveal>
+            <Reveal effect={'revealed'} offset={275}>
+                <p>
+                    I have great enthusiasm for learning. I try as much as I can to make my skills constantly expand.
+                </p>
+            </Reveal>
+            <Reveal effect={'revealed'} offset={250}>
+                <p>
+                    I am studying and working in order to gain experience and practical skills. Like every student, I have
+                    my
+                    shortcomings, but i easly make up for it with my commitment and determination. I have no problem
+                    listening
+                    and learning from the more experienced team members. I understand that there is still a long way to go,
+                    on
+                    the programmer's path.
+                </p>
+            </Reveal>
+            <Reveal effect={'revealed'} offset={355}>
+                <p>
+                    As a member of the team, I am very cheerful, and I can introduce a looser and pleasant atmosphere for
+                    everyone.
+                </p>
+            </Reveal>
         </span>
 
         <div className='gradient-border'>
@@ -82,6 +89,5 @@ export default function () {
             </div>
         </div>
 
-        Foot
     </div>)
 }

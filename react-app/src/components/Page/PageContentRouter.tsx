@@ -4,6 +4,7 @@ import Contact from "pages/Contact/ContactPage";
 import Info from "pages/Info/InfoPage";
 
 import React from "react";
+import Footer from "components/Footer/Footer";
 
 
 export default function () {
@@ -18,6 +19,7 @@ export default function () {
                 <Route path="/tickets/super"    element={<Main/>}/>
                 <Route path="/tickets/mega"     element={<Main/>}/>
             </Routes>
+            <Footer/>
         </div>
     )
 }

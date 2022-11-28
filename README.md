@@ -1,5 +1,6 @@
 # ReactApp
 It's my testing ground for CSS and TypeScript using React.
+It's also my CV now!
 
 ### Idea
 The idea for the app for now is to make an online shop selling tickets for som type of convetion/convention/event. 
