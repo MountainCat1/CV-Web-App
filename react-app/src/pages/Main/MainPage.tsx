@@ -21,9 +21,6 @@ export default function () {
                          src='/img/photos/ME_PC.jpg'
                          alt={'young-attractive-man-working-in-a-call-center'}/>
                     <p>Me at my PC doing some coooding</p>
-                    {/*
-                    <Reveal offset={150} effect='revealed'>
-                    </Reveal>*/}
                 </Reveal>
             </div>
         </div>

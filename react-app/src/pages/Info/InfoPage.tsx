@@ -52,7 +52,6 @@ export default function (){
                             <div className={'card-title-content '}>
                                 About me
                             </div>
-
                         </h2>
                         <p className='card-body'>
                             It's super mega cooool ticket. You want it! :D
