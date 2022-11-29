@@ -16,3 +16,6 @@ The plan is to first develop basic Front-End then Back-End and finish them toget
 * RabbitMQ
 * Docket Support
 * Hosting (Probably on Azure but who knows)
+
+
+UwU
