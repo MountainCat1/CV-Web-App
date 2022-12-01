@@ -1,3 +1,8 @@
+:root {
+    --footer-height: 4em;
+    --page-content-padding-top: calc(var(--navbar-height));
+}
+
 
 .page {
     background-color: var(--color-1);
@@ -14,10 +19,12 @@
 }
 
 .page-content {
-    padding-top: calc(var(--navbar-height));
+    padding-top: var(--page-content-padding-top);
 
     padding-right: 1em;
     padding-left: 1em;
+
+    min-height: calc(100vh - var(--footer-height) - var(--page-content-padding-top));
 }
 
 /* === Page transition === */
