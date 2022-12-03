@@ -20,6 +20,15 @@
     --gradient-color-2: rgb(218, 33, 33);
     --gradient-color-3: rgba(252, 176, 69, 1);
 
+    --gradient-length: 1400px;
+
+    --gradient-4: repeating-linear-gradient(
+            45deg,
+            var(--gradient-color-1) var(--gradient-length),
+            var(--gradient-color-2) calc( var(--gradient-length) * 2),
+            var(--gradient-color-3) calc( var(--gradient-length) * 3),
+            var(--gradient-color-1) calc( var(--gradient-length) * 4)
+    );
     --gradient-1: linear-gradient(45deg,
         var(--gradient-color-1) 0%,
         var(--gradient-color-2) 50%,

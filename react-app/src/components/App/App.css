@@ -8,10 +8,41 @@
   min-height: 100vh;
 
   color: var(--font-color);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.App:before {
+  content: '';
+
+  position:absolute;
+
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+  background: var(--gradient-4);
+
+  padding: 0;
+  margin: 0;
+
+  max-width:100%;
+  width: 100vw;
+
+  height: 1000vh;
+
+  z-index: -1;
 }
 
 body {
   /* Cool gradient */
-  background-image: var(--gradient-1);
+/*  background-image: var(--gradient-1);*/
 
+
+  background-color: transparent;
+
+  position: relative;
 }
