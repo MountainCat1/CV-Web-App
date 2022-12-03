@@ -24,7 +24,7 @@ export default function (){
                         <p className='card-body'>
                             List of all my skills -- what i can and can't do!
                         </p>
-                        <NavLink className='card-link' to='/tickets/normal'>
+                        <NavLink className='card-link' to='/skills'>
                             Learn more
                         </NavLink>
                     </div>
@@ -40,7 +40,7 @@ export default function (){
                         <p className='card-body'>
                             Information about my education and experience in the profession
                         </p>
-                        <NavLink className='card-link' to='/tickets/normal'>
+                        <NavLink className='card-link' to='/experience'>
                             Learn more
                         </NavLink>
                     </div>
@@ -56,7 +56,7 @@ export default function (){
                         <p className='card-body'>
                             General stuff about me as a person.
                         </p>
-                        <NavLink className='card-link' to='/tickets/normal'>
+                        <NavLink className='card-link' to='/about-me'>
                             Learn more
                         </NavLink>
                     </div>
