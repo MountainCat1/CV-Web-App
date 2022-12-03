@@ -3,7 +3,7 @@ import Reveal from "../../components/Reveal/Reveal";
 
 
 export default function () {
-    return (<span className={'page-content'}>
+    return (<>
         <h1>Tomasz Banaś</h1>
         <p>
             Welcome to my amazing website!
@@ -87,5 +87,5 @@ export default function () {
             </div>
         </div>
 
-    </span>)
+    </>)
 }

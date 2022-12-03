@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 
 export default function (){
-    return(<div className={'page-content'}>
+    return(<>
         <h1 className='gradient-text'>
             Info
         </h1>
@@ -66,5 +66,5 @@ export default function (){
 
         <p>If there is anything missing do not hesitate to hit me up in any way!</p>
 
-    </div>)
+    </>)
 }

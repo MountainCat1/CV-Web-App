@@ -5,15 +5,16 @@ import Info from "pages/Info/InfoPage";
 
 import React from "react";
 import Footer from "components/Footer/Footer";
+import Page from "./Page";
 
 
 export default function () {
     return (
         <div className="page">
             <Routes>
-                <Route path="/"         element={<Main/>}/>
-                <Route path="/contact"  element={<Contact/>}/>
-                <Route path="/info"     element={<Info/>}/>
+                <Route path="/"         element={<Page key="1"><Main/>      </Page> }/>
+                <Route path="/contact"  element={<Page key="2"><Contact/>   </Page>}/>
+                <Route path="/info"     element={<Page key="3"><Info/>      </Page>}/>
 
                 <Route path="/tickets/normal"   element={<Main/>}/>
                 <Route path="/tickets/super"    element={<Main/>}/>

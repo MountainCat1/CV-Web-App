@@ -5,7 +5,7 @@ import Reveal from "components/Reveal/Reveal";
 export default function () {
 
 
-    return (<div className={'page-content'}>
+    return (<>
         <h1 className='gradient-text'>
             Contact
         </h1>
@@ -62,5 +62,5 @@ export default function () {
                 </div>
             </div>
         </div>
-    </div>)
+    </>)
 }
