@@ -13,7 +13,7 @@ export default function () {
             <Routes>
                 <Route path="/"         element={<Main/>}/>
                 <Route path="/contact"  element={<Contact/>}/>
-                <Route path="/info"   element={<Info/>}/>
+                <Route path="/info"     element={<Info/>}/>
 
                 <Route path="/tickets/normal"   element={<Main/>}/>
                 <Route path="/tickets/super"    element={<Main/>}/>

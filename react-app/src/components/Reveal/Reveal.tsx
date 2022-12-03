@@ -21,12 +21,12 @@ const Reveal: React.FC<IRevealProps> =({children, effect, offset = 300, style = 
             return;
 
         const element = ref.current as HTMLElement;
-        const elementPosition = element?.getBoundingClientRect().top;
+        const elementPosition = element?.getBoundingClientRect().top - element?.getBoundingClientRect().height / 2;
         const displayHeight = window.screen.height
 
-        console.log(displayHeight)
+        const reveal = offset >= elementPosition - displayHeight / 2;
 
-        if(offset >= elementPosition - displayHeight / 2){
+        if(reveal){
             addChildrenStyle(effect);
         }
     };
