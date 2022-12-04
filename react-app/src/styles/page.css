@@ -20,7 +20,6 @@
 
 
 
-
 .page-content {
     padding-top: var(--page-content-padding-top);
 
@@ -172,7 +171,7 @@ h1 {
 
     text-align: center;
 
-    background: var(--gradient-3);
+    background: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3)); /*var(--gradient-3);*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

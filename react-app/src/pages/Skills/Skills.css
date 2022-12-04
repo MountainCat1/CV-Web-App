@@ -9,11 +9,13 @@ h2:after {
     border-radius: 1rem;
 
     height: 0.2rem;
-
     background: var(--gradient-1);
 
-    transform: scaleX(0);
 
     transition:
             transform 0.15s ease-in-out;
+}
+
+.skills-list > div {
+    padding-bottom: 1em;
 }
